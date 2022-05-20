@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="styles/style.css" rel="stylesheet">
+      <!-- Sidebar CSS-->
+  <link href="assets/css/sidebar-menu.css" rel="stylesheet"/>
+
+    
+
+    <title>signup</title>
+</head>
+
+<body>
+
+    <div class="container-sm">
+        <form>
+            <div class="titolo">
+                <h2>Sign Up</h2>
+            </div>
+            <div class="corpo">
+                <!-- casella di testo per il nome -->
+                <div class="row mb-3">
+                    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label">First Name</label>
+                    <div class="col-sm-10">
+                        <input type="First Name" class="form-control form-control" id="colFormLabelSm"
+                            placeholder="Enter First Name">
+                    </div>
+                </div>
+                <!-- casella di testo per il cognome -->
+                <div class="row mb-3">
+                    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label">Last Name</label>
+                    <div class="col-sm-10">
+                        <input type="Last Name" class="form-control form-control" id="colFormLabelSm"
+                            placeholder="Enter Last Name">
+                    </div>
+                </div>
+                <!-- casella di testo per la data -->
+                <div class="row mb-3">
+                    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Date of Birth</label>
+                    <!-- casella giorni -->
+                    <div class="col-sm-3">
+                        <label class="visually-hidden" for="specificSizeSelect">Preference</label>
+                        <select class="form-select" id="specificSizeSelect">
+                            <option selected>Date</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <!-- casella mesi -->
+                    <div class="col-sm-3">
+                        <label class="visually-hidden" for="specificSizeSelect">Preference</label>
+                        <select class="form-select" id="specificSizeSelect">
+                            <option selected>Month</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <!-- casella anni -->
+                    <div class="col-sm-3">
+                        <label class="visually-hidden" for="specificSizeSelect">Preference</label>
+                        <select class="form-select" id="specificSizeSelect">
+                            <option selected>Year</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- casella di testo Genere -->
+                <div class="row mb-3">
+                    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Gender</label>
+
+                    <!-- casella check Maschio -->
+                    <div class="col-lg-2">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Male</label>
+                        </div>
+                    </div>
+                    <!-- casella check Femmina -->
+                    <div class="col-lg-2">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Female</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- casella di testo per Paese -->
+                <div class="row mb-3">
+                    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Country</label>
+                    <!-- casella Paese -->
+                    <div class="col-sm-3">
+                        <label class="visually-hidden" for="specificSizeSelect">Preference</label>
+                        <select class="form-select" id="specificSizeSelect">
+                            <option selected>Country</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- casella Email -->
+                <div class="row mb-3">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3">
+                    </div>
+                </div>
+                <!-- casella Paassword -->
+                <div class="row mb-3">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword3">
+                    </div>
+                </div>
+                <!-- casella conferma Paassword -->
+                <div class="row mb-3">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Confirm Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword3">
+                    </div>
+                </div>
+                <!-- casella check di conferma -->
+                <div class="col-sm-8">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">I Agree to the Term of use</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pulsanti -->
+            <div class="pulsante">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-success me-md-2" type="button">Invia</button>
+                    <button class="btn btn-danger" type="button">Cancel</button>
+                </div>
+            </div>
+
+
+
+    </div>
+    </form>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
